@@ -1,0 +1,11 @@
+
+<div class="news-container">
+    <h2>Latest News Headlines</h2>
+    <div *ngFor="let news of newsData" class="news-item">
+      <h3>{{ news.title }}</h3>
+      <p><strong>Source:</strong> {{ news.source.name }}</p>
+      <p><strong>Published:</strong> {{ news.publishedAt | date }}</p>
+      <p>{{ news.description }}</p>
+    </div>
+  </div>
+  
